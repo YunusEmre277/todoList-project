@@ -22,3 +22,7 @@
 
 ## ✨Son;
 - Bunları yaptıktan sonra **127.0.0.1:3000/** adresine gidip projeye bakabilirsiniz. Kodları da alıp kendi projenize ekleyebilirsiniz, sıkıntı yok.
+
+<img src="Ekran Alıntsısı.PNG">
+<img src="Ekran Alıntıswı.PNG">
+<img src="Ekran Alıntısı.PNG">
