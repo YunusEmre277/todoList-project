@@ -1,0 +1,30 @@
+<%- include("./components/header.ejs") %>
+<style>
+    form input {
+        margin-left: 375px;
+    }
+    form input[type = "submit"] {
+        margin-left: -28px;
+        margin-top: 15px;
+        width: 100px;
+    }
+    ul li {
+        margin-left: 550px;
+    }
+    ul {
+        margin-top: 45px;
+    }
+</style>
+<form action="/" method="post" align="center">
+    <input type="text" class="form-control mt-3 w-50 " name="title" placeholder="Todo List title"required>
+    <input type="text" class="form-control mt-3 w-50" name="desc" placeholder="Todo List description" required>
+    <input type="submit" class="btn btn-primary " value="Create">
+</form>
+<ul class="list-group">
+<% data.forEach(element => { %>
+<% let number = 0 %>
+        <li class="list-group-item w-25"> <span class="text-primary "><%= element.title %></span><br> <%= element.description %> <span class="text-primary" style="cursor: pointer;">Delete : <input  onclick="location.href='/<%= element._id %>/delete';" type="checkbox" name="delete"></span></li>
+<% }); %>
+</ul>
+
+<%- include("./components/footer.ejs") %>
